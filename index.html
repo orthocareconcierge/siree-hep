@@ -50,7 +50,7 @@
   --charcoal: #1E1E1E;
   --dark: #252525;
   --mid: #3A3A3A;
-  --muted: #D0D0D0;
+  --muted: #ECEAE4;
   --light: #F5F3EF;
   --white: #FFFFFF;
   --red: #C0392B;
@@ -122,7 +122,7 @@ body {
 .nav-card:active::after { transform: scaleX(1); }
 .nav-icon { font-size: 22px; margin-bottom: 7px; display: block; }
 .nav-card h3 { font-family: 'Jost', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--white); margin-bottom: 3px; }
-.nav-card p { font-size: 10px; color: var(--muted); font-weight: 300; }
+.nav-card p { font-size: 11px; color: var(--muted); font-weight: 400; }
 .proprietary-line {
   font-size: 9px; color: var(--muted); text-align: center; margin-top: 28px;
   letter-spacing: 0.12em; line-height: 1.7; font-weight: 300; padding: 0 16px;
@@ -141,20 +141,20 @@ body {
   letter-spacing: 0.06em; cursor: pointer; padding: 8px 4px; display: flex; align-items: center; gap: 5px;
 }
 .page-header h2 { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 300; color: var(--white); }
-.page-header .page-sub { font-size: 10px; letter-spacing: 0.22em; color: var(--gold); text-transform: uppercase; margin-top: 5px; font-weight: 400; }
+.page-header .page-sub { font-size: 11.5px; letter-spacing: 0.18em; color: var(--gold-light); text-transform: uppercase; margin-top: 5px; font-weight: 500; }
 .page-content { padding: 20px 14px; }
 .section-label {
-  font-size: 9px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 10px; margin-top: 24px; padding-left: 2px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--gold-light); margin-bottom: 10px; margin-top: 24px; padding-left: 2px;
 }
 .section-label:first-child { margin-top: 0; }
 .card { background: var(--charcoal); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius); padding: 14px; margin-bottom: 10px; }
 .card-gold { border-color: rgba(201,168,76,0.22); background: linear-gradient(135deg, var(--charcoal), rgba(201,168,76,0.04)); }
-.intro-card p { font-size: 12px; color: var(--muted); line-height: 1.7; font-weight: 300; }
+.intro-card p { font-size: 14.5px; color: var(--muted); line-height: 1.65; font-weight: 400; }
 
 /* progress pill */
 .prog-pill {
-  display: inline-block; font-size: 9px; font-weight: 600; letter-spacing: 0.14em;
+  display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--gold); background: rgba(201,168,76,0.08);
   border: 1px solid rgba(201,168,76,0.22); border-radius: 20px; padding: 6px 13px; margin-bottom: 12px;
 }
@@ -182,8 +182,8 @@ body {
 .ex-check.done { background: var(--green); border-color: var(--green); }
 .ex-check.done::after { content: '\2713'; font-size: 14px; font-weight: 600; color: var(--white); }
 .exercise-info { flex: 1; cursor: pointer; }
-.exercise-name { font-size: 13px; font-weight: 500; color: var(--white); letter-spacing: 0.03em; margin-bottom: 2px; }
-.exercise-meta { font-size: 12px; color: var(--gold); font-weight: 500; letter-spacing: 0.04em; }
+.exercise-name { font-size: 16.5px; font-weight: 600; color: var(--white); letter-spacing: 0.02em; margin-bottom: 3px; }
+.exercise-meta { font-size: 13.5px; color: var(--gold-light); font-weight: 500; letter-spacing: 0.03em; }
 .exercise-chevron { color: var(--muted); font-size: 11px; transition: transform 0.18s; flex-shrink: 0; cursor: pointer; padding: 4px; }
 .exercise-card.open .exercise-chevron { transform: rotate(180deg); }
 .exercise-body { display: none; padding: 0 14px 14px; border-top: 1px solid rgba(255,255,255,0.06); }
@@ -194,9 +194,9 @@ body {
 .exercise-video video { width: 100%; max-height: 70vh; display: block; }
 
 .cue-box { background: var(--dark); border-radius: var(--radius-sm); padding: 11px; margin-top: 12px; }
-.cue-box h5 { font-size: 8px; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 7px; }
+.cue-box h5 { font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 8px; }
 .cue-box ul { padding-left: 13px; }
-.cue-box li { font-size: 12px; color: var(--muted); line-height: 1.6; font-weight: 300; margin-bottom: 2px; }
+.cue-box li { font-size: 14.5px; color: var(--muted); line-height: 1.6; font-weight: 400; margin-bottom: 6px; }
 
 /* logging block */
 .log-section { margin-top: 12px; background: var(--dark); border-radius: var(--radius-sm); padding: 11px; }
@@ -219,8 +219,8 @@ body {
 }
 .notes-input {
   background: var(--dark); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px;
-  padding: 9px; font-family: 'Jost', sans-serif; font-size: 12px; color: var(--white);
-  width: 100%; resize: none; min-height: 52px; margin-top: 11px; font-weight: 300;
+  padding: 10px; font-family: 'Jost', sans-serif; font-size: 13.5px; color: var(--white);
+  width: 100%; resize: none; min-height: 52px; margin-top: 11px; font-weight: 400;
 }
 .notes-input:focus { outline: none; border-color: var(--gold); }
 .notes-input::placeholder { color: var(--muted); }
@@ -285,14 +285,14 @@ body {
 .goal-item:last-child { border-bottom: none; }
 .goal-number { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 300; color: var(--gold); line-height: 1; min-width: 30px; margin-top: 1px; }
 .goal-text h4 { font-size: 13px; font-weight: 500; letter-spacing: 0.05em; margin-bottom: 4px; color: var(--white); }
-.goal-text p { font-size: 12px; color: var(--muted); line-height: 1.6; font-weight: 300; }
+.goal-text p { font-size: 14px; color: var(--muted); line-height: 1.6; font-weight: 400; }
 
 /* ===================== PRECAUTIONS ===================== */
 .precaution-card { background: var(--charcoal); border-radius: var(--radius); padding: 13px 14px; margin-bottom: 7px; border-left: 3px solid var(--red); }
 .precaution-card.yellow { border-left-color: var(--yellow); }
 .precaution-card h4 { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 7px; color: #E74C3C; }
 .precaution-card.yellow h4 { color: var(--yellow); }
-.precaution-card li { font-size: 12px; color: var(--muted); line-height: 1.6; font-weight: 300; }
+.precaution-card li { font-size: 14px; color: var(--muted); line-height: 1.6; font-weight: 400; }
 .precaution-card ul { padding-left: 13px; }
 
 /* ===================== BOTTOM NAV ===================== */
@@ -440,7 +440,7 @@ body {
     <div class="section-label">Primary Goals</div>
     <div class="card" id="goals-list"></div>
     <div class="section-label">Why This Matters</div>
-    <div class="card"><p id="philosophy-text" style="font-size:12px;color:var(--muted);line-height:1.8;font-weight:300;"></p></div>
+    <div class="card"><p id="philosophy-text" style="font-size:14px;color:var(--muted);line-height:1.75;font-weight:400;"></p></div>
   </div>
 </div>
 
@@ -457,7 +457,7 @@ body {
     <div id="restrictions-list"></div>
     <div class="section-label">Pain During Exercise</div>
     <div class="card">
-      <p style="font-size:12px;color:var(--muted);line-height:1.9;font-weight:300;">
+      <p style="font-size:14px;color:var(--muted);line-height:1.8;font-weight:400;">
         <span style="color:var(--green);font-weight:500;">0 to 3/10:</span> Acceptable. Continue with attention to form.<br>
         <span style="color:var(--yellow);font-weight:500;">4 to 5/10:</span> Modify. Reduce load or range of motion.<br>
         <span style="color:var(--red);font-weight:500;">6+/10:</span> Stop. Rest and contact Kelly.<br><span style="font-weight:500;">After you finish:</span> pain that stays above 4/10 more than 10 minutes after you stop is a red flag, even if it felt fine while you were moving.
